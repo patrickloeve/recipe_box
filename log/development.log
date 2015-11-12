@@ -385,3 +385,800 @@ ActionView::MissingTemplate (Missing template recipes/show, application/show wit
 
 
   Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRecipes (20151112145947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "recipes" already exists: CREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.0ms)[0m  rollback transaction
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 16:05:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4036038594024765604__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRecipes (20151112145947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "recipes" already exists: CREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 16:07:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2155383960931472154__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 16:08:00 +0100
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.0) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.0) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__2155383960931472154__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRecipes (20151112145947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+SQLite3::SQLException: table "recipes" already exists: CREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 16:14:37 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 16:14:46 +0100
+
+ActionController::RoutingError (No route matches [GET] "/recipes/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 16:15:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/recipes/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.5ms)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRecipes (20151112151935)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "recipes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151112151935"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:36:07 +0100
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:36:43 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 New Recipes
+    2: 	- render 'form'
+  app/views/recipes/new.html.haml:2
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:36:58 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.haml within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 New Recipes
+    2: 	= render 'form'
+  app/views/recipes/new.html.haml:2
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:37:06 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.haml within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (Indentation can't use both tabs and spaces.):
+    1: %h1 New Recipes
+    2: 	 % render 'form'
+  app/views/recipes/new.html.haml:2
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:38:52 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/new.html.haml within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %h1 and nested within it.):
+    1: %h1 New Recipes
+    2: 	=  render 'form'
+  app/views/recipes/new.html.haml:2
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (66.3ms)
+  Rendered recipes/new.html.haml within layouts/application (71.3ms)
+Completed 200 OK in 74ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:39:11 +0100
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:41:17 +0100
+Processing by RecipesController#new as HTML
+ERROR: compiling _app_views_recipes_new_html_haml___1046035752276359378_70112916942800 RAISED /Users/patrickloeve/Desktop/recipes/recepisbox/app/views/recipes/new.html.haml:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...ink_to "back", root_path class: "btn btn-default"
+...                               ^
+Function body:           def _app_views_recipes_new_html_haml___1046035752276359378_70112916942800(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "recipes/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["area", "base", "basefont", "br", "col", "command", "embed", "frame", "hr", "img", "input", "isindex", "keygen", "link", "menuitem", "meta", "param", "source", "track", "wbr"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h1>New Recipe</h1>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false((  render 'form'
+));}\n<br>\n#{
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( link_to "back", root_path class: "btn btn-default"
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__3256453150855940273__process_action__callbacks'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1548601407330622115__call__callbacks'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered recipes/new.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/patrickloeve/Desktop/recipes/recepisbox/app/views/recipes/new.html.haml:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...ink_to "back", root_path class: "btn btn-default"
+...                               ^):
+    3: 
+    4: %br/ 
+    5: 
+    6: = link_to "back", root_path class: "btn btn-default"
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.0) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:413:in `_run__3256453150855940273__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1548601407330622115__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (4.2ms)
+  Rendered recipes/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:47 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-12 18:41:50 +0100
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (4.5ms)
+  Rendered recipes/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:41:59 +0100
+
+
+Started POST "/recipes" for 127.0.0.1 at 2015-11-12 18:42:47 +0100
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1jsNx3RPcYsm4wxSFZWNtfconsTk60DFA9fcVvMDek=", "recipe"=>{"title"=>"Whoa this so  nice!!", "description"=>"test the form making with sim[le_form and haml\r\n"}, "commit"=>"Create Recipe"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "recipes" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Thu, 12 Nov 2015 17:42:47 UTC +00:00], ["description", "test the form making with sim[le_form and haml\r\n"], ["title", "Whoa this so  nice!!"], ["updated_at", Thu, 12 Nov 2015 17:42:47 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 11ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-12 18:42:47 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:42:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:42:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:42:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:42:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:42:48 +0100
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:44:47 +0100
+
+
+Started GET "/recipes/create" for 127.0.0.1 at 2015-11-12 18:45:50 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "create"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Recipe with id=create):
+  app/controllers/recipes_controller.rb:37:in `find_recipe'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (5.2ms)
+  Rendered recipes/new.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:46:02 +0100
+
+
+Started GET "/recipes/create" for 127.0.0.1 at 2015-11-12 18:48:32 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "create"]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Recipe with id=create):
+  app/controllers/recipes_controller.rb:37:in `find_recipe'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:48:38 +0100
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-12 18:49:24 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRecipe Load (0.1ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `body' for #<Recipe:0x007f88db77c4f8>):
+    1: %h1= @recipe.title
+    2: %h2= @recipe.body
+  app/views/recipes/show.html.haml:2:in `_app_views_recipes_show_html_haml__969982430719126291_70112887123340'
+
+
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.4ms)
+  Rendered /Users/patrickloeve/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.1ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-12 18:49:49 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.1ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-12 18:49:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-12 18:49:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-12 18:49:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-12 18:49:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-12 18:49:50 +0100
