@@ -2451,3 +2451,226 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-19 11:34:46 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-19 11:34:46 +0100
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-19 13:27:56 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.5ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-19 13:27:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-19 13:27:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-19 13:27:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-19 13:27:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-19 13:27:57 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 21:10:02 +0100
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (1.7ms)[0m  SELECT "recipes".* FROM "recipes" ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 39ms (Views: 29.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2015-11-19 21:10:04 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered recipes/show.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 21:10:12 +0100
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-19 21:10:19 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (20.0ms)
+  Rendered recipes/new.html.haml within layouts/application (24.3ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-19 21:10:19 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (12.0ms)
+  Rendered recipes/new.html.haml within layouts/application (18.4ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-19 21:10:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:20 +0100
+
+
+Started POST "/recipes" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1jsNx3RPcYsm4wxSFZWNtfconsTk60DFA9fcVvMDek=", "recipe"=>{"title"=>"another recipe from the italian ", "description"=>"pasta pasta pasta pasta en nog eens pasta"}, "commit"=>"Create Recipe"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.7ms)[0m  INSERT INTO "recipes" ("created_at", "description", "title", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Thu, 19 Nov 2015 20:10:59 UTC +00:00], ["description", "pasta pasta pasta pasta en nog eens pasta"], ["title", "another recipe from the italian "], ["updated_at", Thu, 19 Nov 2015 20:10:59 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/recipes/2
+Completed 302 Found in 15ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/recipes/2" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered recipes/show.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-19 21:10:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 21:11:09 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.4ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2015-11-19 21:11:14 +0100
+Processing by RecipesController#new as HTML
+  Rendered recipes/_form.html.haml (5.0ms)
+  Rendered recipes/new.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-19 21:11:16 +0100
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (1.6ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 73ms (Views: 64.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-28 07:04:45 +0100
+
+
+Started GET "/recipes/2" for 127.0.0.1 at 2015-11-28 07:04:51 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered recipes/show.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-28 07:04:54 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-28 07:04:56 +0100
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-28 07:04:57 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-28 07:05:00 +0100
+Processing by RecipesController#index as HTML
+  [1m[35mRecipe Load (0.4ms)[0m  SELECT "recipes".* FROM "recipes" ORDER BY created_at DESC
+  Rendered recipes/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (1.7ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 48ms (Views: 42.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 19:10:02 +0100
+
+
+Started GET "/recipes/2" for 127.0.0.1 at 2015-12-09 19:10:05 +0100
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRecipe Load (0.2ms)[0m  SELECT "recipes".* FROM "recipes" WHERE "recipes"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered recipes/show.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-09 19:10:09 +0100
+Processing by RecipesController#index as HTML
+  [1m[36mRecipe Load (0.2ms)[0m  [1mSELECT "recipes".* FROM "recipes" ORDER BY created_at DESC[0m
+  Rendered recipes/index.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms)
